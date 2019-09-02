@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <ul>
+            <li><a href="{% url 'about' %}">about page</a></li>
+            <li><a href="{% url 'contact' %}">Contact page</a></li>
+        </ul>
+        <form action="{% url 'count' %}">
+            <textarea name="fulltext"></textarea>
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>

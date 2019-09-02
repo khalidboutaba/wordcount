@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+    </header>
+    <body>
+        <div>
+            <div>
+                <h2>Veuiller choisir un seul mot!</h2>
+            </div>
+            <div>
+                <form action="{% url 'result' %}">
+                    <input type="radio" name="question1" value="Oui" checked>Oui <br>
+                    <input type="radio" name="question1" value="Non" >Non<br>
+                    <input type="submit" name="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

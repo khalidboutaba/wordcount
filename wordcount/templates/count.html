@@ -1,0 +1,16 @@
+<h1>Word count</h1>
+
+<div>
+    <ul>
+        <li>your splitted list: {{wordlist}}</li>
+        <li>The number of words is {{count}}</li>
+        <li>my dictionary is: {{sorteddictionary}}</li>
+
+        <table>
+            <tr><th>word</th>count<th></th></tr>
+            {% for words,counts in sorteddictionary %}
+            <tr><td>{{words}}</td><td>{{counts}}</td></tr>
+            {% endfor %}
+        </table>
+    </ul>
+</div>
